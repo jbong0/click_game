@@ -1,8 +1,8 @@
-# Clicky Game
+# Tsum Tsum Clicky Game
 
  https://ucbclickgame.herokuapp.com/
 
-## Click the images to shuffle up my favorite cartoon characters!
+## Click the images to shuffle up you favorite disney Tsum Tsum characters!
  - Try to click on all images without clicking on the same image twice.
 
 ## Requirements
