@@ -1,11 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
 .App {
   text-align: center;
+  font-family: 'Poiret One';
 }
 
+.score{
+  font-size: 40px;
+  color: orangered;
+}
+
+.count{
+  font-color: black;
+  font-size: 40px;
+}
+
+.instructions{
+  font-size: 20px;
+  width: 400px;
+  padding: 5%;
+  color: rebeccapurple;
+}
+
+.scoreboard{
+  font-size: 20px;
+  width: 500px;
+  padding: 5%;
+}
+html{
+  background-image: url('./images/tsumtsum.jpg');
+  background-position: center;
+  height: 100%;
+}
 .images-container{
   display: grid;
-  grid-column-gap: 100px;
+  grid-column-gap: 200px;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 2%;
 }
 
 img{
@@ -15,7 +46,29 @@ img{
 .header{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: palegoldenrod;
-  padding: 40px;
+  background-color: white;
+  opacity: 0.8;
+  padding: 1%;
+}
+
+.container{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+  border: 5px solid pink;
+  background-color: paleturquoise;
+  background-image: url('./images/hearts.jpg');
+  background-position: center;
+}
+
+.logo{
+  text-align: center;
+  padding-left: 50px;
+}
+
+h1{
+  margin: -5px;
+  padding-left: 50px;
+  width: 100%
 
 }

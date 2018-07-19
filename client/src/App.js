@@ -6,6 +6,9 @@ import image3 from './images/donald.png'
 import image4 from './images/daisy.png'
 import image5 from './images/goofy.png'
 import image6 from './images/pluto.png'
+import logo from './images/logo.png'
+
+
 
 var imageArray = [
   {
@@ -45,7 +48,7 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      message: "Click any image to begin",
+      logoImage: logo,
       images: imageArray,
       score: 0,
       highScore: 0
@@ -102,15 +105,22 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="header">
-          <div>Clicky Game</div>
-          <div>{this.state.message}</div>
-          <div>Score: {this.state.score}  High Score: {this.state.highScore}</div>
+        <div className="container">  
+          <div className="header">
+            <div className="instructions"> 
+              Click on an image to earn points. <br />
+              But don't click an image more than once.</div>
+            <div><img className="logo" src={this.state.logoImage} alt="tsum tsum logo"/> <span className="clicky"><h1>Clicky Game</h1></span></div>
+            <div className="scoreboard">  
+              <span className="score"> Score:</span> <span className="count">   {this.state.score} </span> <br />
+              <span className="score"> High Score:</span> <span className="count"> {this.state.highScore}  </span>
+            </div>
+          </div>
+          <div className="images-container"> {displayImages} </div>
         </div>
-        <div className="images-container"> {displayImages} </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
